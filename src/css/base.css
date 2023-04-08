@@ -103,6 +103,9 @@ a {
 .container-wf {
     max-width: 100%;
 }
+.root {
+    overflow: hidden;
+}
 /* #root {
     width: 100%;
 }
