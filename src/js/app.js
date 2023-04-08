@@ -23,6 +23,10 @@ function handleForm(e) {
     const valueEmail = formInfo['email'].value;
     const valuePhone = formInfo['phone'].value;
     const valueFb = formInfo['fb'].value;
+    if (valueName == '' || valueEmail == '' || valuePhone == '' || valueFb == '') {
+        alert('vui lòng nhập dữ liệu vào form');
+        return;
+    }
     const data = {
         name: valueName,
         email: valueEmail,
@@ -32,3 +36,16 @@ function handleForm(e) {
     localStorage.setItem('dataStudent', JSON.stringify(data));
 }
 btn_send.addEventListener('click', handleForm);
+
+let btnBars = document.querySelector('.icon-menu');
+let navbar = document.querySelector('.header-navbar');
+let close = document.querySelector('.close-icon');
+btnBars.addEventListener('click', () => {
+    navbar.classList.add('active');
+});
+close.addEventListener('click', () => {
+    navbar.classList.remove('active');
+});
+window.onscroll = function () {
+    navbar.classList.remove('active');
+};
