@@ -160,6 +160,9 @@
     .enterprise-heading {
         display: none;
     }
+    .question-list {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -172,5 +175,8 @@
     .lecturers-item {
         width: 100%;
         height: 450px;
+    }
+    .question-list {
+        width: 100%;
     }
 }

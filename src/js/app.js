@@ -34,6 +34,7 @@ function handleForm(e) {
         linkFb: valueFb,
     };
     localStorage.setItem('dataStudent', JSON.stringify(data));
+    alert('Đăng ký thành công');
 }
 btn_send.addEventListener('click', handleForm);
 
